@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: cloud-payment-service
+    ####Spring Cloud Consul for Service Discovery
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+      config:
+        profile-separator: '-' # default value is ","，we update '-'
+        format: YAML
+        # 设置刷新时间 默认 55
+#        watch:
+#          wait-time: 55
+
+# config/cloud-payment-service/data
+#       /cloud-payment-service-dev/data
+#       /cloud-payment-service-prod/data
+

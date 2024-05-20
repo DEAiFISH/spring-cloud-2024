@@ -1,0 +1,20 @@
+package com.deaifish.cloud.apis;
+
+import com.deaifish.cloud.resp.ResultData;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+/**
+ * @description TODO
+ *
+ * @author DEAiFISH
+ * @date 2024/5/20 18:46
+ */
+@FeignClient(value = "seata-account-service")
+public interface AccountFeignApi
+{
+    //扣减账户余额
+    @PostMapping("/account/decrease")
+    ResultData decrease(@RequestParam("userId") Long userId, @RequestParam("money") Long money);
+}
