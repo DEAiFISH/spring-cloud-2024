@@ -547,7 +547,7 @@ public class RestTemplateConfig
 ### 是什么？
 
 1. CiruitBreaker只是一套**规范和接口**，Resilience4J是落地**实现**者。
-2. [Resilience4j ](https://github.com/lmhmhl/Resilience4j-Guides-Chinese/blob/main/index.md供高阶函数（装饰器），以通过断路器、速率限制器、重试或隔板增强任何功能接口、lambda 表达式或方法引用。您可以在任何函数式接口、lambda 表达式或方法引用上堆叠多个装饰器。优点是您可以选择您需要的装饰器，而没有其他选择。
+2. [Resilience4j](https://github.com/lmhmhl/Resilience4j-Guides-Chinese/blob/main/index.md)供高阶函数（装饰器），以通过断路器、速率限制器、重试或隔板增强任何功能接口、lambda 表达式或方法引用。您可以在任何函数式接口、lambda 表达式或方法引用上堆叠多个装饰器。优点是您可以选择您需要的装饰器，而没有其他选择。
 3. Resilience4j 2 需要 Java 17。
 
 ### 熔断（服务熔断和服务降级）

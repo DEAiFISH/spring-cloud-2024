@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.deaifish.cloud.mapper.ExpenditureMapper">
+  <resultMap id="BaseResultMap" type="com.deaifish.cloud.entities.Expenditure">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="expenditure_id" jdbcType="INTEGER" property="expenditureId" />
+    <result column="money" jdbcType="REAL" property="money" />
+    <result column="time" jdbcType="TIMESTAMP" property="time" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="account_id" jdbcType="INTEGER" property="accountId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+</mapper>
