@@ -42,7 +42,26 @@
         </table>-->
 
         <!--seata_account-->
-        <table tableName="t_account" domainObjectName="Account">
+<!--        <table tableName="t_account" domainObjectName="Account">-->
+<!--            <generatedKey column="id" sqlStatement="JDBC"/>-->
+<!--        </table>-->
+
+        <table tableName="USER" domainObjectName="User">
+            <generatedKey column="id" sqlStatement="JDBC"/>
+        </table>
+        <table tableName="ACCOUNT" domainObjectName="Account">
+            <generatedKey column="id" sqlStatement="JDBC"/>
+        </table>
+        <table tableName="INCOME" domainObjectName="Income">
+            <generatedKey column="id" sqlStatement="JDBC"/>
+        </table>
+        <table tableName="EXPENDITURE" domainObjectName="Expenditure">
+            <generatedKey column="id" sqlStatement="JDBC"/>
+        </table>
+        <table tableName="SAVE" domainObjectName="Save">
+            <generatedKey column="id" sqlStatement="JDBC"/>
+        </table>
+        <table tableName="CYCLE" domainObjectName="Cycle">
             <generatedKey column="id" sqlStatement="JDBC"/>
         </table>
     </context>
